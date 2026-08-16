@@ -1,0 +1,58 @@
+export const services = [
+  {
+    slug: 'events-activation',
+    title: 'Events & Activation',
+    desc: 'Immersive brand environments that transform audiences into participants.',
+    detail: 'From campaign idea to fabrication, staffing, live experience and reporting, AQUA builds activations as complete experience systems rather than isolated event moments.',
+    image: '/images/services/events-activation.jpg',
+  },
+  {
+    slug: 'social-media-marketing',
+    title: 'Social Media Marketing',
+    desc: 'Performance-driven content strategies engineered for visibility, engagement, and conversion.',
+    detail: 'Channel strategy, campaign systems and content frameworks designed to connect creative storytelling with measurable audience behaviour.',
+    image: '/images/hero-trail/8.jpg',
+  },
+  {
+    slug: 'branding',
+    title: 'Branding',
+    desc: 'From identity to positioning — we craft brands that command attention and loyalty.',
+    detail: 'Positioning, identity systems, campaign language and brand environments designed as one coherent expression across physical and digital touchpoints.',
+    image: '/images/services/branding.jpg',
+  },
+  {
+    slug: 'video-production',
+    title: 'Video Production',
+    desc: 'Cinematic storytelling designed to influence perception and elevate brand value.',
+    detail: 'Concept development, art direction, production and post-production shaped around a clear strategic narrative and the platform where the story will live.',
+    image: '/images/services/video-production.jpg',
+  },
+  {
+    slug: 'content-creation',
+    title: 'Content Creation',
+    desc: 'High-impact, platform-native content that resonates with modern audiences.',
+    detail: 'Editorial, campaign and social content systems built for consistency, speed and relevance without diluting the core brand idea.',
+    image: '/images/services/content-creation.jpg',
+  },
+  {
+    slug: 'sports-marketing',
+    title: 'Sports Marketing',
+    desc: 'We turn passion into performance through strategic sports-driven engagement.',
+    detail: 'Sponsorship activation, fan engagement and event storytelling that translates sporting energy into measurable brand participation.',
+    image: '/images/services/sports-marketing.jpg',
+  },
+  {
+    slug: 'website-automation',
+    title: 'Website & Automation',
+    desc: 'Smart digital ecosystems that streamline operations and enhance user journeys.',
+    detail: 'Experience-led websites, campaign platforms and workflow automation built to connect interface quality with operational usefulness.',
+    image: '/images/hero-trail/11.jpg',
+  },
+  {
+    slug: 'architectural-design',
+    title: 'Architectural Design',
+    desc: 'We design physical spaces that communicate brand identity and human experience.',
+    detail: 'Spatial concepts, interior environments, temporary installations and visualization where architecture becomes part of the communication strategy.',
+    image: '/images/services/architectural-design.jpg',
+  },
+];
