@@ -322,8 +322,6 @@
     width: 100%;
     overflow: hidden;
     padding-inline: clamp(1.5rem, 5vw, 8rem);
-    mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent);
   }
 
   .service-carousel-track {
@@ -357,8 +355,6 @@
     width: 100%;
     overflow: hidden;
     padding-inline: clamp(1.5rem, 5vw, 8rem);
-    mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
   }
 
   .team-carousel-track {

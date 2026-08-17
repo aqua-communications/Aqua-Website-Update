@@ -5,17 +5,17 @@ import { testimonials } from '../data/testimonials';
 
 export default function TestimonialsPage() {
   usePageMeta({
-    title: 'Client Reviews & Testimonials | JTI, MARKS, BIPPA & More | AQUA',
-    description: 'Explore AQUA Innovations client work reviews across JTI, MARKS, BIPPA, Huawei, Unilever and ACI Limited, covering brand activation, corporate events, spatial experience and integrated communication in Bangladesh.',
+    title: 'Client Reviews & Project Stories | JTI, Huawei, MARKS, Igloo | AQUA',
+    description: 'Explore AQUA Innovations project reviews for JTI, Cumilla Victorians, Durbar Rajshahi, Huawei, MARKS and Igloo across brand activation, sports marketing, corporate interiors and DITF exhibition design in Bangladesh.',
     path: '/testimonials',
   });
 
   useStructuredData('client-reviews', {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Client Reviews & Testimonials | AQUA Innovations',
+    name: 'Client Reviews & Project Stories | AQUA Innovations',
     url: 'https://www.aquabd.pro/testimonials',
-    description: 'Project-review summaries describing AQUA Innovations work across selected corporate and consumer brand partnerships in Bangladesh.',
+    description: 'AQUA-authored project review summaries covering selected corporate, sports, technology and FMCG partnerships in Bangladesh.',
     isPartOf: {
       '@type': 'WebSite',
       '@id': 'https://www.aquabd.pro/#website',
@@ -29,12 +29,16 @@ export default function TestimonialsPage() {
         '@type': 'ListItem',
         position: index + 1,
         item: {
-          '@type': 'CreativeWork',
+          '@type': 'Question',
           name: testimonial.question,
-          description: testimonial.review,
           about: {
             '@type': 'Organization',
             name: testimonial.client,
+          },
+          keywords: testimonial.services.join(', '),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: testimonial.answer,
           },
           creator: {
             '@id': 'https://www.aquabd.pro/#organization',
@@ -47,60 +51,72 @@ export default function TestimonialsPage() {
   return (
     <main id="main-content" className="bg-[#f5f5f5] text-black">
       <PageHero
-        eyebrow="Client Reviews & Testimonials"
-        title="Selected partnerships,"
-        accent="described through the work."
-        description="Direct, answer-first project summaries showing how AQUA approaches brand activation, corporate events, technology, spatial experience and integrated campaign delivery."
+        eyebrow="Client Reviews & Project Stories"
+        title="Work explained"
+        accent="through outcomes."
+        description="Answer-first project summaries showing what AQUA delivered, how each engagement was structured and the working approach behind brand activation, sports marketing, architecture and exhibition experiences in Bangladesh."
       />
 
-      <section className="pb-16 md:pb-20" aria-label="Selected client work reviews">
-        <div className="aqua-container border-t border-black/15">
-          {testimonials.map((testimonial, index) => (
-            <article
-              key={testimonial.client}
-              className="grid lg:grid-cols-12 gap-5 lg:gap-10 py-8 md:py-11 border-b border-black/15"
-            >
-              <div className="lg:col-span-1 text-[10px] font-bold tracking-[0.18em] text-black/45">
-                {String(index + 1).padStart(2, '0')}
-              </div>
+      <section className="pb-16 md:pb-20" aria-label="Selected client project reviews">
+        <div className="aqua-container">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-5">
+            {testimonials.map((testimonial, index) => (
+              <article
+                key={testimonial.client}
+                className="rounded-2xl border border-black/12 bg-white/45 p-5 md:p-6 lg:p-7"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-[9px] font-bold uppercase tracking-[0.15em] text-[#0891b2]">
+                      {testimonial.sector}
+                    </p>
+                    <h2 className="mt-2 text-[1.35rem] md:text-[1.6rem] font-medium tracking-[-0.025em] leading-tight">
+                      {testimonial.client}
+                    </h2>
+                    <p className="mt-2 text-[0.78rem] leading-relaxed text-black/55">{testimonial.engagement}</p>
+                  </div>
+                  <span className="shrink-0 text-[9px] font-bold tracking-[0.18em] text-black/30">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                </div>
 
-              <div className="lg:col-span-3">
-                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#0891b2]">
-                  {testimonial.engagement}
-                </p>
-                <h2 className="mt-3 text-[1.45rem] md:text-[1.75rem] font-medium tracking-[-0.025em]">
-                  {testimonial.client}
-                </h2>
-                <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.14em] text-black/40">
-                  Client work review
-                </p>
-              </div>
-
-              <div className="lg:col-span-8">
-                <h3 className="text-[0.78rem] md:text-[0.85rem] font-bold uppercase tracking-[0.12em] text-black/50">
+                <h3 className="mt-6 text-[0.72rem] md:text-[0.78rem] font-bold uppercase tracking-[0.11em] leading-relaxed text-black/46">
                   {testimonial.question}
                 </h3>
-                <p className="mt-4 text-[1.25rem] md:text-[1.75rem] leading-[1.3] tracking-[-0.025em] font-medium">
-                  {testimonial.review}
+                <p className="mt-3 text-[0.98rem] md:text-[1.08rem] leading-[1.55] tracking-[-0.012em] font-medium text-black/88">
+                  {testimonial.answer}
                 </p>
-                <div className="mt-6 flex flex-wrap gap-2">
+
+                <div className="mt-5 space-y-3">
+                  {testimonial.projects.map((project) => (
+                    <div key={project.title} className="border-t border-black/10 pt-3">
+                      <p className="text-[0.9rem] font-medium">{project.title}</p>
+                      <p className="mt-1.5 text-[0.8rem] md:text-[0.84rem] leading-relaxed text-black/58">{project.detail}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-5 rounded-xl bg-black/[0.035] p-4">
+                  <p className="text-[8px] font-bold uppercase tracking-[0.15em] text-black/40">How AQUA worked</p>
+                  <p className="mt-2 text-[0.82rem] md:text-[0.87rem] leading-relaxed text-black/65">{testimonial.workingStyle}</p>
+                </div>
+
+                <div className="mt-4 flex flex-wrap gap-1.5">
                   {testimonial.services.map((service) => (
                     <span
                       key={service}
-                      className="rounded-full border border-black/15 px-3 py-2 text-[9px] md:text-[10px] font-bold uppercase tracking-[0.12em] text-black/55"
+                      className="rounded-full border border-black/12 px-2.5 py-1.5 text-[8px] font-bold uppercase tracking-[0.1em] text-black/50"
                     >
                       {service}
                     </span>
                   ))}
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))}
+          </div>
 
-          <p className="max-w-3xl py-7 text-[0.78rem] md:text-[0.84rem] leading-relaxed text-black/45">
-            These are AQUA-authored project review summaries describing the scope and
-            experience of selected client work. Publish any direct client quotation or named
-            spokesperson endorsement only after receiving the client&apos;s approval.
+          <p className="max-w-4xl py-7 text-[0.74rem] md:text-[0.8rem] leading-relaxed text-black/45">
+            These are AQUA-authored project review summaries based on the scope and delivery of selected client engagements. They are not presented as verbatim quotations or named spokesperson endorsements. Direct client quotations should be published only with the client&apos;s approval.
           </p>
         </div>
       </section>

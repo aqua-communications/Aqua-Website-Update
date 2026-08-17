@@ -115,18 +115,8 @@ export default function Clients() {
         </div>
       </div>
 
-      {/* Full-bleed marquee with edge fade */}
+      {/* Full-bleed marquee — intentionally no edge gradient/fade. */}
       <div className="relative w-full overflow-hidden">
-        {/* Edge gradient masks so logos dissolve at the left/right */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 left-0 w-12 sm:w-24 z-10 bg-gradient-to-r from-[#f5f5f5] to-transparent"
-        />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 right-0 w-12 sm:w-24 z-10 bg-gradient-to-l from-[#f5f5f5] to-transparent"
-        />
-
         <ul
           ref={trackRef}
           className="flex flex-nowrap items-center will-change-transform"

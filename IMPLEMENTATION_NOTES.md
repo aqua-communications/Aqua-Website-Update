@@ -54,3 +54,11 @@ The project preserves the existing dependency lockfile. If dependencies are not 
 - Updated Home/About/Testimonials/Contact metadata and sitemap last-modified dates.
 - Source-level checks completed for JSON-LD, XML sitemap, local import resolution, Approach placement, office-map references and minimal black corner navigation.
 - A clean npm production build was not executed in this environment because package installation could not complete within the available sandbox network/runtime constraints. Run `npm ci`, `npm run lint`, and `npm run build` locally before deployment.
+
+## Final refinement — 17 Aug 2026
+
+- Added a dynamic floating navigation bar that stays hidden at the top of Home and appears after scroll; internal pages show it immediately.
+- Moved the footer office address into a centered location row at the bottom of the Contact AQUA block.
+- Rebuilt Client Reviews around JTI, Cumilla Victorians, Durbar Rajshahi, Huawei, MARKS and Igloo with answer-first SEO/AEO project summaries and smaller editorial typography.
+- Removed left/right fade gradients from the Integrated Solutions, Team and Trusted-by-brand automatic carousels.
+- Preserved reduced-motion fallbacks and full side-menu navigation.
