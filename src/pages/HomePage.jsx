@@ -11,8 +11,8 @@ import Clients from '../components/Clients';
 
 export default function HomePage() {
   usePageMeta({
-    title: 'AQUA Innovations | Experience Design & Brand Activation Company in Bangladesh',
-    description: 'AQUA Innovations is a multidisciplinary experience design company in Dhaka delivering brand activation, architecture, technology, live experiences and integrated communication for corporate clients.',
+    title: 'AQUA Innovations | Brand Activation Agency Bangladesh',
+    description: 'AQUA Innovations is a Dhaka-based brand activation and experience design agency creating events, campaigns, digital experiences and branded spaces.',
     path: '/',
   });
 
