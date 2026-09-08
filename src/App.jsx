@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const ServicePage = lazy(() => import('./pages/ServicePage'));
 const WorkPage = lazy(() => import('./pages/WorkPage'));
 const ProjectPage = lazy(() => import('./pages/ProjectPage'));
 const TeamPage = lazy(() => import('./pages/TeamPage'));
@@ -94,6 +95,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/:slug" element={<ServicePage />} />
             <Route path="/work" element={<WorkPage />} />
             <Route path="/work/:slug" element={<ProjectPage />} />
             <Route path="/team" element={<TeamPage />} />
