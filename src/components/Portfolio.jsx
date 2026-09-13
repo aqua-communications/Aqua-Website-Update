@@ -59,7 +59,7 @@ export default function Portfolio() {
               <span className="col-span-2 md:col-span-1 text-[10px] font-bold tracking-[0.16em] text-black/45">{String(index + 1).padStart(2, '0')}</span>
               <div className="col-span-10 md:col-span-6">
                 <p className="text-[10px] md:text-[11px] uppercase tracking-[0.15em] font-bold text-black/45 mb-2">{project.client} · {project.year}</p>
-                <h3 className="text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] font-medium tracking-[-0.04em] leading-none group-hover:text-[#0891b2] transition-colors">{project.title}</h3>
+                <h3 className="text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] font-medium tracking-[-0.04em] leading-none group-hover:text-[#0891b2] transition-colors"><a href={project.externalFilm} target="_blank" rel="noreferrer">{project.title}</a></h3>
               </div>
               <p className="hidden md:block md:col-span-3 text-[0.95rem] text-black/55">{project.category}</p>
               <div className="col-span-12 md:col-span-2 flex md:justify-end gap-4 pl-[16.666%] md:pl-0">
