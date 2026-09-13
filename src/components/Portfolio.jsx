@@ -39,7 +39,7 @@ export default function Portfolio() {
   };
 
   return (
-    <section className="relative py-14 md:py-20 text-black" id="portfolio" onPointerMove={setPreviewPosition}>
+    <section className="relative overflow-hidden py-14 md:py-20 text-black" id="portfolio" onPointerMove={setPreviewPosition} onPointerLeave={hidePreview}>
       <div className="aqua-container">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-9 md:mb-11">
           <div>
