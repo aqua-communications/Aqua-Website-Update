@@ -32,9 +32,11 @@ export default function ProjectPage() {
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mt-9 md:mt-12 border-t border-black/15 pt-8 md:pt-10">
             <div className="lg:col-span-3"><p className="section-eyebrow">Project Framework</p></div>
             <div className="lg:col-span-6 space-y-7">
-              <div><h2 className="text-[1.7rem] font-medium">Challenge</h2><p className="mt-3 text-black/65 leading-relaxed">Create a coherent experience that can hold attention, communicate the brand idea and move people toward meaningful participation.</p></div>
-              <div><h2 className="text-[1.7rem] font-medium">Strategic response</h2><p className="mt-3 text-black/65 leading-relaxed">AQUA treats the environment, content, technology and production sequence as one connected journey. Detailed project metrics and confidential client information can be added here when approved for publication.</p></div>
-              <div><h2 className="text-[1.7rem] font-medium">Execution</h2><p className="mt-3 text-black/65 leading-relaxed">The project is developed from concept through design and execution with a single system of visual, spatial and operational decisions.</p></div>
+              <div><h2 className="text-[1.7rem] font-medium">Challenge</h2><p className="mt-3 text-black/65 leading-relaxed">{project.challenge}</p></div>
+              <div><h2 className="text-[1.7rem] font-medium">Strategic response</h2><p className="mt-3 text-black/65 leading-relaxed">{project.strategicResponse}</p></div>
+              <div><h2 className="text-[1.7rem] font-medium">Execution</h2><p className="mt-3 text-black/65 leading-relaxed">{project.execution}</p></div>
+              {project.outcome && <div><h2 className="text-[1.7rem] font-medium">Outcome</h2><p className="mt-3 text-black/65 leading-relaxed">{project.outcome}</p></div>}
+              {project.capabilities?.length > 0 && <div><h2 className="text-[1.7rem] font-medium">Capabilities</h2><ul className="mt-3 space-y-2 text-black/65">{project.capabilities.map((capability) => <li key={capability}>{capability}</li>)}</ul></div>}
             </div>
             <div className="lg:col-span-3 lg:text-right">
               <a href={project.externalFilm} target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center rounded-full bg-black text-white px-6 text-[11px] font-bold uppercase tracking-[0.15em] hover:bg-[#0891b2] transition-colors">Watch film ↗</a>

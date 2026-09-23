@@ -9,6 +9,10 @@ export const projects = [
     image: 'https://img.youtube.com/vi/oWgvKzVE6sg/maxresdefault.jpg',
     externalFilm: 'https://youtu.be/oWgvKzVE6sg',
     summary: 'An activation system designed to move consumers from attention to participation through a structured physical journey.',
+    challenge: 'The project needed a physical journey that could make the brand idea easy to encounter, understand and participate in without relying on a single moment of attention.',
+    strategicResponse: 'AQUA structured the experience around progressive participation, connecting the initial point of contact to the moments where people could engage with the brand more deeply.',
+    execution: 'The activation was developed as one connected system of audience flow, physical touchpoints, visual communication and on-ground delivery.',
+    capabilities: ['Brand Activation', 'Experience Design', 'Production'],
   },
   {
     slug: 'digital-ecosystem',
@@ -20,6 +24,10 @@ export const projects = [
     image: 'https://img.youtube.com/vi/fO7pMaQhr2c/maxresdefault.jpg',
     externalFilm: 'https://youtu.be/fO7pMaQhr2c',
     summary: 'A connected digital experience aligning interface, automation and campaign content around a single user journey.',
+    challenge: 'The digital experience needed to connect interface decisions, campaign content and automation so that the user journey felt coherent across its different interactions.',
+    strategicResponse: 'AQUA approached the ecosystem as a connected journey rather than a collection of isolated digital outputs, aligning the experience architecture with the campaign purpose.',
+    execution: 'The work brought together interface structure, content logic and automation into a digital system designed to guide users from discovery toward the next relevant action.',
+    capabilities: ['Digital Experience', 'Content Systems', 'Automation'],
   },
   {
     slug: 'architectural-install',
@@ -31,6 +39,10 @@ export const projects = [
     image: 'https://img.youtube.com/vi/PPcmklUtx4A/maxresdefault.jpg',
     externalFilm: 'https://youtu.be/PPcmklUtx4A',
     summary: 'A spatial intervention where brand identity, architecture and visitor movement operate as one narrative.',
+    challenge: 'The installation needed to express a brand identity through space while giving visitors a clear and natural path through the environment.',
+    strategicResponse: 'AQUA treated the architecture, visual language and movement sequence as a single narrative, allowing the space itself to carry the story.',
+    execution: 'The intervention was shaped through spatial planning, identity-led detailing and visitor-flow decisions that connected the physical setting to the intended experience.',
+    capabilities: ['Spatial Experience', 'Architectural Design', 'Brand Environment'],
   },
   {
     slug: 'sports-campaign',
@@ -42,6 +54,10 @@ export const projects = [
     image: 'https://img.youtube.com/vi/G2_LjG9YQqk/maxresdefault.jpg',
     externalFilm: 'https://youtu.be/G2_LjG9YQqk',
     summary: 'A fan-led campaign translating the emotion of sport into live participation and shareable brand moments.',
+    challenge: 'The campaign needed to translate the energy of sport into participation that felt natural to fans and gave the brand a meaningful place within the moment.',
+    strategicResponse: 'AQUA built the concept around fan behaviour and live participation, using the emotional language of sport as the entry point for the brand experience.',
+    execution: 'The campaign connected live engagement, audience interaction and shareable moments into an experience designed for both the event environment and the conversations around it.',
+    capabilities: ['Sports Marketing', 'Fan Engagement', 'Live Campaigns'],
   },
   {
     slug: 'corporate-summit',
@@ -53,5 +69,9 @@ export const projects = [
     image: 'https://img.youtube.com/vi/re8BxY0VNm4/maxresdefault.jpg',
     externalFilm: 'https://youtu.be/re8BxY0VNm4',
     summary: 'A high-touch corporate experience combining spatial storytelling, production and guest journey design.',
+    challenge: 'The summit required a guest journey that could feel considered from arrival through the main programme while carrying a clear corporate narrative.',
+    strategicResponse: 'AQUA connected spatial storytelling with production planning and guest-flow design so that every stage of the experience supported the same central message.',
+    execution: 'The experience was developed across environment, programme moments and operational details, creating a consistent framework for the people moving through it.',
+    capabilities: ['Corporate Events', 'Production', 'Guest Experience'],
   },
 ];

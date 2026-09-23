@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
-import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -102,7 +102,6 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
-            <Route path="/blog" element={<Navigate to="/testimonials" replace />} />
             <Route path="/faqs" element={<FAQsPage />} />
             <Route path="/privacy" element={<Privacy lenis={lenis} />} />
             <Route path="/terms" element={<Terms lenis={lenis} />} />

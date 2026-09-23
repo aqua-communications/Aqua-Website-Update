@@ -1,4 +1,4 @@
-import usePageMeta from '../hooks/usePageMeta';
+import usePageMeta, { SITE_URL } from '../hooks/usePageMeta';
 import Hero from '../components/Hero';
 import OurWork from '../components/OurWork';
 import Services from '../components/Services';
@@ -14,6 +14,17 @@ export default function HomePage() {
     title: 'AQUA Innovations | Brand Activation Agency Bangladesh',
     description: 'AQUA Innovations is a Dhaka-based brand activation and experience design agency creating events, campaigns, digital experiences and branded spaces.',
     path: '/',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/#webpage`,
+      url: `${SITE_URL}/`,
+      name: 'AQUA Innovations | Brand Activation Agency Bangladesh',
+      description: 'AQUA Innovations is a Dhaka-based brand activation and experience design agency creating events, campaigns, digital experiences and branded spaces.',
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      about: { '@id': `${SITE_URL}/#organization` },
+      inLanguage: 'en',
+    },
   });
 
   return (

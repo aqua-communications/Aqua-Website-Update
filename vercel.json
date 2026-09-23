@@ -1,15 +1,32 @@
 {
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/testimonials",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/services", "destination": "/index.html" },
-    { "source": "/services/:slug", "destination": "/index.html" },
-    { "source": "/work", "destination": "/index.html" },
-    { "source": "/work/:slug", "destination": "/index.html" },
-    { "source": "/team", "destination": "/index.html" },
     { "source": "/about", "destination": "/index.html" },
+    { "source": "/services", "destination": "/index.html" },
+    { "source": "/services/events-activation", "destination": "/index.html" },
+    { "source": "/services/social-media-marketing", "destination": "/index.html" },
+    { "source": "/services/branding", "destination": "/index.html" },
+    { "source": "/services/video-production", "destination": "/index.html" },
+    { "source": "/services/content-creation", "destination": "/index.html" },
+    { "source": "/services/sports-marketing", "destination": "/index.html" },
+    { "source": "/services/website-automation", "destination": "/index.html" },
+    { "source": "/services/architectural-design", "destination": "/index.html" },
+    { "source": "/work", "destination": "/index.html" },
+    { "source": "/work/brand-activation", "destination": "/index.html" },
+    { "source": "/work/digital-ecosystem", "destination": "/index.html" },
+    { "source": "/work/architectural-install", "destination": "/index.html" },
+    { "source": "/work/sports-campaign", "destination": "/index.html" },
+    { "source": "/work/corporate-summit", "destination": "/index.html" },
+    { "source": "/team", "destination": "/index.html" },
     { "source": "/contact", "destination": "/index.html" },
     { "source": "/testimonials", "destination": "/index.html" },
-    { "source": "/blog", "destination": "/index.html" },
     { "source": "/faqs", "destination": "/index.html" },
     { "source": "/privacy", "destination": "/index.html" },
     { "source": "/terms", "destination": "/index.html" }

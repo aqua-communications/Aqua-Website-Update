@@ -57,62 +57,17 @@ const faqs = [
   ["Which locations work best for BTL campaigns in Bangladesh?", "The best BTL campaign location in Bangladesh depends on the target audience and campaign objective rather than footfall alone. Retail environments and malls may suit shopper campaigns, universities can support youth engagement, commercial districts can reach professional audiences, while roadshows and community locations may support broader geographic engagement. Location selection should consider audience relevance, accessibility, permissions, traffic flow, safety and the type of interaction required."]
 ];
 
-const hiddenFaqs = [
-  {
-    question: 'What is engagement marketing?',
-    answer: 'Engagement marketing is a marketing strategy that directly involves consumers in the development of a brand experience. It focuses on participation, interaction and emotional connection instead of passive message delivery.',
-    links: [
-      { label: 'Wikipedia: Engagement Marketing', href: 'https://en.wikipedia.org/wiki/Engagement_marketing' },
-      { label: 'HubSpot: Brand Activation Strategy', href: 'https://blog.hubspot.com/marketing/brand-activation' },
-    ],
-  },
-  {
-    question: 'How does experiential marketing create customer engagement?',
-    answer: 'Experiential marketing creates customer engagement by allowing people to touch, test, explore or co-create a brand experience. This creates stronger memory, emotional attachment and behavioural response than static advertising alone.',
-    links: [
-      { label: 'Wikipedia: Engagement Marketing', href: 'https://en.wikipedia.org/wiki/Engagement_marketing' },
-      { label: 'HubSpot: Brand Activation Strategy', href: 'https://blog.hubspot.com/marketing/brand-activation' },
-    ],
-  },
-  {
-    question: 'What is the difference between above-the-line and below-the-line marketing?',
-    answer: 'Above-the-line marketing focuses on broad reach through mass media, while below-the-line marketing targets direct engagement and measurable audience response. Many campaign plans combine both.',
-    links: [
-      { label: 'WordStream: ATL vs BTL Marketing', href: 'https://www.wordstream.com/blog/ws/2014/01/27/atl-vs-btl-marketing' },
-      { label: 'Wikipedia: Engagement Marketing', href: 'https://en.wikipedia.org/wiki/Engagement_marketing' },
-    ],
-  },
-  {
-    question: 'What is product sampling marketing?',
-    answer: 'Product sampling marketing gives potential customers a direct, low-friction way to experience the product before purchase, often making trial, trust and conversion easier to achieve.',
-    links: [
-      { label: 'Wikipedia: Product Demonstration', href: 'https://en.wikipedia.org/wiki/Product_demonstration' },
-      { label: 'HubSpot: Brand Activation Strategy', href: 'https://blog.hubspot.com/marketing/brand-activation' },
-    ],
-  },
-  {
-    question: 'What is the difference between BTL and digital marketing?',
-    answer: 'BTL marketing is a targeted engagement model, while digital marketing focuses on the channels and technologies used to deliver campaigns. The strongest strategies combine both.',
-    links: [
-      { label: 'Wikipedia: Digital Marketing', href: 'https://en.wikipedia.org/wiki/Digital_marketing' },
-      { label: 'WordStream: ATL vs BTL Marketing', href: 'https://www.wordstream.com/blog/ws/2014/01/27/atl-vs-btl-marketing' },
-    ],
-  },
-];
-
-const allFaqs = [...faqs, ...hiddenFaqs.map(({ question, answer, links }) => [question, answer, links])];
-
 export default function FAQsPage() {
   usePageMeta({
-    title: 'AQUA Innovations FAQs | Services, Process & Project Enquiries',
-    description: 'Clear answers about AQUA Innovations services, project process, execution capabilities, location and how to start a project.',
+    title: 'BTL Marketing, Brand Activation & Experiential Marketing FAQs | AQUA',
+    description: 'Answers to common questions about BTL marketing, brand activation, experiential marketing, campaign ROI, retail activation and marketing campaigns in Bangladesh.',
     path: '/faqs',
   });
 
   const faqSchema = useMemo(() => ({
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: allFaqs.map((faq) => {
+    mainEntity: faqs.map((faq) => {
       const question = faq[0];
       const answer = faq[1];
       return {
@@ -160,17 +115,6 @@ export default function FAQsPage() {
         </div>
       </section>
 
-      <div style={{ display: 'none' }} aria-hidden="true">
-        {hiddenFaqs.map(({ question, answer, links }) => (
-          <div key={question}>
-            <h3>{question}</h3>
-            <p>{answer}</p>
-            {links.map(({ label, href }) => (
-              <a key={href} href={href} target="_blank" rel="noopener noreferrer">{label}</a>
-            ))}
-          </div>
-        ))}
-      </div>
     </main>
   );
 }

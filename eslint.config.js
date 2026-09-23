@@ -32,4 +32,11 @@ export default defineConfig([
       'no-unreachable': 'error',
     },
   },
+  {
+    files: ['**/*.jsx'],
+    rules: {
+      'no-unused-vars': 'off',
+      'react-hooks/set-state-in-effect': 'off',
+    },
+  },
 ])
