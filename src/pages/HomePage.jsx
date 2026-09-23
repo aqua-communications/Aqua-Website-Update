@@ -11,7 +11,7 @@ import Clients from '../components/Clients';
 
 export default function HomePage() {
   usePageMeta({
-    title: 'AQUA Innovations | Brand Activation Agency Bangladesh',
+    title: 'AQUA | Brand Activation Agency',
     description: 'AQUA Innovations is a Dhaka-based brand activation and experience design agency creating events, campaigns, digital experiences and branded spaces.',
     path: '/',
     schema: {
