@@ -5,13 +5,40 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const footerLinks = [
-  ['Services', '/services'],
-  ['Work', '/work'],
-  ['Testimonials', '/testimonials'],
-  ['Team', '/team'],
-  ['About', '/about'],
-  ['Contact', '/contact'],
+const footerGroups = [
+  {
+    title: 'Explore',
+    links: [
+      ['About', '/about'],
+      ['Team', '/team'],
+      ['Testimonials', '/testimonials'],
+      ['FAQs', '/faqs'],
+      ['Contact', '/contact'],
+    ],
+  },
+  {
+    title: 'Services',
+    links: [
+      ['Events & Activation', '/services/events-activation'],
+      ['Social Media Marketing', '/services/social-media-marketing'],
+      ['Branding', '/services/branding'],
+      ['Video Production', '/services/video-production'],
+      ['Content Creation', '/services/content-creation'],
+      ['Sports Marketing', '/services/sports-marketing'],
+      ['Website & Automation', '/services/website-automation'],
+      ['Architectural Design', '/services/architectural-design'],
+    ],
+  },
+  {
+    title: 'Selected Work',
+    links: [
+      ['Brand Activation', '/work/brand-activation'],
+      ['Digital Ecosystem', '/work/digital-ecosystem'],
+      ['Architectural Install', '/work/architectural-install'],
+      ['Sports Campaign', '/work/sports-campaign'],
+      ['Corporate Summit', '/work/corporate-summit'],
+    ],
+  },
 ];
 
 const officeMap = 'https://maps.app.goo.gl/USmeeDpN74P56vuF7';
@@ -70,16 +97,20 @@ export default function Footer() {
                 <p className="section-eyebrow mb-3">Call</p>
                 <a href="tel:+8801782314352" className="text-xl md:text-2xl font-medium">+880 1782-314352</a>
               </div>
-              <nav aria-label="Footer navigation">
-                <p className="section-eyebrow mb-3">Explore</p>
-                <div className="grid grid-cols-2 gap-x-6 gap-y-2">
-                  {footerLinks.map(([label, href]) => (
-                    <Link key={href} to={href} className="text-[0.95rem] font-medium text-black/65 hover:text-black transition-colors">
-                      {label}
-                    </Link>
-                  ))}
-                </div>
-              </nav>
+              <div className="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-7">
+                {footerGroups.map((group) => (
+                  <nav key={group.title} aria-label={`${group.title} footer links`}>
+                    <p className="section-eyebrow mb-3">{group.title}</p>
+                    <div className="grid grid-cols-1 gap-y-2">
+                      {group.links.map(([label, href]) => (
+                        <Link key={href} to={href} className="text-[0.95rem] font-medium text-black/65 hover:text-black transition-colors">
+                          {label}
+                        </Link>
+                      ))}
+                    </div>
+                  </nav>
+                ))}
+              </div>
             </div>
           </div>
 
