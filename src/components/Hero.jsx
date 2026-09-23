@@ -168,7 +168,7 @@ export default function Hero() {
     <section
       ref={rootRef}
       id="hero"
-      className="relative min-h-screen bg-[#0a0a0a] text-white overflow-hidden flex items-center"
+      className="relative min-h-[100svh] min-h-[100dvh] bg-[#0a0a0a] text-white overflow-hidden flex items-center"
     >
       <img
         src="/images/hero-bg.jpg"
@@ -203,7 +203,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="aqua-container relative z-10 pt-24 pb-20 md:pt-24 md:pb-20">
+      <div className="aqua-container relative z-10 pt-[clamp(5.5rem,12svh,7rem)] pb-[clamp(4rem,10svh,5rem)] md:pt-24 md:pb-20">
         <div className="mx-auto max-w-[1500px] text-center">
           <div className="overflow-hidden mb-5 md:mb-6">
             <p className="hero-line text-[clamp(0.85rem,1.55vw,1.35rem)] font-semibold uppercase tracking-[0.22em] text-white/72">
@@ -211,7 +211,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <h1 className="uppercase font-black tracking-[-0.072em] leading-[0.82] text-[clamp(3.5rem,10.9vw,11rem)]">
+          <h1 className="uppercase font-black tracking-[-0.072em] leading-[0.82] text-[clamp(2.6rem,10.9vw,11rem)]">
             <span className="block overflow-hidden">
               <span className="hero-line block">We Architect</span>
             </span>
