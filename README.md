@@ -40,7 +40,7 @@ npm run preview
 - `/faqs` — FAQs
 - `/privacy` — Privacy
 - `/terms` — Terms
-- `/blog` — legacy redirect to `/testimonials`
+- `/blog` — AQUA Journal with hard-coded editorial articles
 
 ## Content editing
 
@@ -51,6 +51,7 @@ Core repeatable content is centralized in `src/data/`:
 - `team.js`
 - `industries.js`
 - `testimonials.js`
+- `blog.js`
 
 ## SEO / AEO
 
@@ -59,6 +60,7 @@ Core repeatable content is centralized in `src/data/`:
 - Organization + WebSite structured data on the root document
 - Visible FAQ answers + FAQPage JSON-LD for machine-readable context
 - Dedicated semantic Client Reviews route without fabricated rating markup
+- Dedicated static Blog / Journal route with Blog + BlogPosting JSON-LD for SEO/AEO
 - Descriptive image alt text and stronger internal linking
 - `public/robots.txt` and `public/sitemap.xml` provide crawl infrastructure
 

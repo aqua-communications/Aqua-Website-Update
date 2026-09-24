@@ -12,6 +12,7 @@ const footerGroups = [
       ['About', '/about'],
       ['Team', '/team'],
       ['Testimonials', '/testimonials'],
+      ['Blogs', '/blog'],
       ['FAQs', '/faqs'],
       ['Contact', '/contact'],
     ],

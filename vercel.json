@@ -1,11 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/blog",
-      "destination": "/testimonials",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/index.html" },
@@ -27,6 +20,8 @@
     { "source": "/team", "destination": "/index.html" },
     { "source": "/contact", "destination": "/index.html" },
     { "source": "/testimonials", "destination": "/index.html" },
+    { "source": "/blog", "destination": "/index.html" },
+    { "source": "/blog/:slug", "destination": "/index.html" },
     { "source": "/faqs", "destination": "/index.html" },
     { "source": "/privacy", "destination": "/index.html" },
     { "source": "/terms", "destination": "/index.html" }

@@ -19,6 +19,8 @@ const TeamPage = lazy(() => import('./pages/TeamPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const TestimonialsPage = lazy(() => import('./pages/TestimonialsPage'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogArticlePage = lazy(() => import('./pages/BlogArticlePage'));
 const FAQsPage = lazy(() => import('./pages/FAQsPage'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
@@ -102,6 +104,8 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/testimonials" element={<TestimonialsPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogArticlePage />} />
             <Route path="/faqs" element={<FAQsPage />} />
             <Route path="/privacy" element={<Privacy lenis={lenis} />} />
             <Route path="/terms" element={<Terms lenis={lenis} />} />

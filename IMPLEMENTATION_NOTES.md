@@ -4,7 +4,7 @@
 
 1. Slide-out navigation is vertically scrollable with sticky top/close controls and a sticky contact row.
 2. Added Sadman Bin Rashid — Assistant Manager, Brands & Communications — using the supplied portrait.
-3. Removed visible Insights/blog navigation and replaced it with a dedicated Testimonials / Client Reviews route. `/blog` remains only as a backward-compatible redirect.
+3. Reintroduced visible Journal navigation as a dedicated static `/blog` route, separate from Testimonials / Client Reviews. Journal content is maintained in `src/data/blog.js`; there is no public publishing workflow.
 4. Corporate Summit is last in the shared project dataset, which makes it last on both the homepage portfolio and Work page (including the Events filter).
 5. Reduced oversized empty spacing across homepage sections, destination-page heroes, Work grids, service rows, contact pages and footer. The Work page stagger was removed to keep the grid visually organized.
 6. SEO/AEO strengthened with route metadata, dynamic canonicals, Organization + WebSite JSON-LD, FAQPage JSON-LD, sitemap updates, descriptive alt text and stronger internal links.
