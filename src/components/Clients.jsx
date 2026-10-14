@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 // 36 client/partner logos resized to 400px squares in /public/images/Logos/
 const logos = Array.from({ length: 36 }, (_, i) => ({
-  src: i === 3 ? '/images/Logos/jti-logo.svg' : `/images/Logos/${i + 1}.png`,
+  src: i === 3 ? '/images/Logos/jti-logo.png' : `/images/Logos/${i + 1}.png`,
   alt: i === 3 ? 'JTI logo' : `Client logo ${i + 1}`,
 }));
 
