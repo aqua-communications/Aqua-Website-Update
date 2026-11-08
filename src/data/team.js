@@ -3,7 +3,7 @@ export const team = [
   { name: 'Asif Bahar', role: 'Chief Operating Officer', photo: '/images/team/asif-bahar.jpg' },
   { name: 'M Sabbir Hossain', role: 'Chief Technology Officer', photo: '/images/team/m-sabbir-hossain.jpg' },
   { name: 'Shayekh Rahman Khan', role: 'Manager, Brand Communication', photo: '/images/team/shayekh-rahman-khan.jpg' },
-  { name: 'Sadman Bin Rashid', role: 'Assistant Manager, Brands & Communications', photo: '/images/team/sadman-bin-rashid.webp', position: '50% 42%' },
+  { name: 'Sadman Bin Rashid', role: 'Assistant Manager, Brand Communication', photo: '/images/team/sadman-bin-rashid.webp', position: '50% 42%' },
   { name: 'Ashraf Uddin', role: 'Digital Strategist', photo: '/images/team/ashraf-uddin.webp', position: '50% 35%' },
   { name: 'Raisha Khan', role: 'Client Service Executive', photo: '/images/team/raisha-khan-v4.png', position: '50% 42%' },
   { name: 'Rashad Sharkar', role: 'Procurement Assistant', photo: '/images/team/rashad-sharkar-live-v3.png', position: '50% 42%' },
