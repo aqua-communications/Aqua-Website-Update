@@ -13,4 +13,5 @@ export const team = [
   { name: 'Syed Ashif Hossain', role: 'Lead of Growth, Sports', photo: '/images/team/syed-ashif-hossain.jpg' },
   { name: 'Md Saiful Islam (Saif)', role: 'Digital Alchemist', photo: '/images/team/md-saiful-islam.jpg' },
   { name: 'Md Tawhidul Alam', role: 'Money Mapper', photo: '/images/team/md-tawhidul-alam.jpg' },
+  { name: 'Md Shafiqur Rahman Abir', role: 'Event Assistant Manager', photo: '/images/team/md-shafiqur-rahman-abir.png' },
 ];
