@@ -30,12 +30,21 @@ export default function BlogArticle({ blog }) {
         </div>
       </header>
 
-      <figure className="mt-10 aspect-[16/8] overflow-hidden border border-black/10 bg-[#85ffff]" aria-label={blog.imageAlt}>
-        <div className="flex h-full items-end justify-between p-5 md:p-8">
-          <span className="text-[clamp(2rem,6vw,5rem)] font-medium uppercase leading-[0.85] tracking-[-0.06em] text-black/80">AQUA<br />{blog.category}</span>
-          <span className="text-[9px] font-bold uppercase tracking-[0.16em] text-black/55">AQUA Blogs</span>
-        </div>
-      </figure>
+      {blog.imageAvailable && blog.image ? (
+        <figure className="relative mt-10 overflow-hidden border border-black/10 bg-[#e9f5f6]" aria-label={blog.imageAlt}>
+          <img src={blog.image} alt={blog.imageAlt || blog.title} className="block h-auto w-full" />
+          <span className="absolute bottom-4 right-4 rounded-full bg-black/70 px-4 py-2 backdrop-blur-sm md:bottom-6 md:right-6">
+            <img src="/images/aqua-logo.png" alt="" aria-hidden="true" className="h-6 w-auto object-contain md:h-8" />
+          </span>
+        </figure>
+      ) : (
+        <figure className="mt-10 aspect-[16/8] overflow-hidden border border-black/10 bg-[#85ffff]" aria-label={blog.imageAlt}>
+          <div className="flex h-full items-end justify-between p-5 md:p-8">
+            <span className="text-[clamp(2rem,6vw,5rem)] font-medium uppercase leading-[0.85] tracking-[-0.06em] text-black/80">AQUA<br />{blog.category}</span>
+            <span className="text-[9px] font-bold uppercase tracking-[0.16em] text-black/55">AQUA Blogs</span>
+          </div>
+        </figure>
+      )}
 
       <section className="mt-12 space-y-7" aria-label={`${blog.title} article body`}>
         {blog.content.map((block, index) => <ContentBlock key={`${block.type}-${block.text || block.question || index}`} block={block} />)}

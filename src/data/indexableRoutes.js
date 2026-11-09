@@ -19,6 +19,7 @@ export const indexableRoutes = [
   '/team',
   '/testimonials',
   '/blog',
+  '/blog/saff-championship-2026-tecno-brand-experience',
   '/blog/ai-search-aeo-brand-discovery-2026',
   '/blog/experiential-marketing-brand-activation-2026',
   '/blog/social-search-marketing-brand-discovery-2026',

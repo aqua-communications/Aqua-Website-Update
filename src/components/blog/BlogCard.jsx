@@ -15,6 +15,14 @@ export default function BlogCard({ blog, index }) {
           <time dateTime={blog.publishedDate}>{blog.publishedDate}</time>
           <span>{blog.readingTime}</span>
         </div>
+        {blog.imageAvailable && blog.image ? (
+          <div className="relative mt-6 overflow-hidden border border-black/10 bg-black/5">
+            <img src={blog.image} alt={blog.imageAlt || blog.title} className="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02] md:h-64" />
+            <span className="absolute bottom-3 right-3 rounded-full bg-black/70 px-3 py-1.5 backdrop-blur-sm">
+              <img src="/images/aqua-logo.png" alt="" aria-hidden="true" className="h-5 w-auto object-contain" />
+            </span>
+          </div>
+        ) : null}
         <p className="mt-5 text-[0.94rem] leading-relaxed text-black/60">{blog.excerpt}</p>
         <span className="mt-7 inline-flex text-[10px] font-bold uppercase tracking-[0.14em] text-black/65 group-hover:text-[#0891b2]">Read article <span aria-hidden="true" className="ml-2">&#8594;</span></span>
       </Link>
