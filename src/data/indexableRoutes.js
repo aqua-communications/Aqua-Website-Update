@@ -19,6 +19,7 @@ export const indexableRoutes = [
   '/team',
   '/testimonials',
   '/blog',
+  '/blog/hasan-raheem-dil-kay-parday-tour-dhaka-2026',
   '/blog/art-dhaka-2026-aloki-art-architecture-brand-experience',
   '/blog/saff-championship-2026-tecno-brand-experience',
   '/blog/ai-search-aeo-brand-discovery-2026',

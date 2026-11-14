@@ -1,6 +1,8 @@
+import hasanRaheemBlog from './hasanRaheemBlog';
 import artDhakaBlog from './artDhakaBlog';
 
 export const blogs = [
+  hasanRaheemBlog,
   artDhakaBlog,
   {
     slug: 'saff-championship-2026-tecno-brand-experience',
