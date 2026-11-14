@@ -1,4 +1,7 @@
+import artDhakaBlog from './artDhakaBlog';
+
 export const blogs = [
+  artDhakaBlog,
   {
     slug: 'saff-championship-2026-tecno-brand-experience',
     title: 'SAFF Championship 2026: How TECNO Turned Football Into a Brand Experience',
